@@ -3,6 +3,13 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.4.4'
 
+# Gemfile
+gem 'bootstrap-sass'
+gem 'font-awesome-sass', '~> 5.0.9'
+gem 'simple_form'
+gem 'autoprefixer-rails'
+gem 'jquery-rails' # Add this line if you use Rails 5.1 or higher
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.1'
 # Use sqlite3 as the database for Active Record
@@ -48,6 +55,7 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'meta_request'
 end
 
 group :test do
